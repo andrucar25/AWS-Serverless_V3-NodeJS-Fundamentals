@@ -1,0 +1,16 @@
+Para deployar en aws el archivo serverless. Recordar que el usuario que hara el deploy debe tener permisos para hacer deploy en lambda
+
+-despliega la lambda a dev si no se coloca el stage en el yaml
+sls deploy --verbose 		
+
+-se coloca la flag de stage para indicar a que ambiente desplegar
+sls deploy --stage qas --verbose
+
+-eliminar la lambda
+sls remove --verbose		
+
+- crear lambda con nodejs y typescript ejecutar el comando:
+sls create --name <nombre> --template aws-nodejs-typescript
+
+-desplegar solo la funcion sin tener que volver a crear la infraestrctura
+sls deploy -f <function name> --verbose
