@@ -4,7 +4,7 @@ Para deployar en aws el archivo serverless. Recordar que el usuario que hara el 
 sls deploy --verbose 		
 
 -se coloca la flag de stage para indicar a que ambiente desplegar
-sls deploy --stage qas --verbose
+sls deploy --stage <nombre del stage> --verbose
 
 -eliminar la lambda
 sls remove --verbose		
